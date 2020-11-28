@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, CardBody, Card, Alert } from "reactstrap";
+import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap";
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 // import Logo from "../../assets/images/lucastvslogo.jpg";
@@ -36,7 +36,7 @@ export default class Login extends Component {
     render() {
 
         return (
-            <React.Fragment>
+            <Container>
                 <div style={{ marginTop: "50px", visibility: "hidden" }}>Login</div>
                 <div className="wrapper fadeInDown">
                     <AvForm className="form-horizontal formContent pad15" onValidSubmit={this.handleValidSubmit} style={{    background: "white"}}>
@@ -48,11 +48,11 @@ export default class Login extends Component {
                         </div>
 
                         <div className="mt-3">
-                            <button className="btn btn-primary btn-block waves-effect waves-light" type="submit"> {this.state.loading ? "Loading" : "Log In"} </button>
+                            <button className="btn btn-primary waves-effect waves-light" type="submit"> {this.state.loading ? "Loading" : "Log In"} </button>
                         </div>
                     </AvForm>
                 </div>
-            </React.Fragment>
+            </Container>
         );
     }
 }

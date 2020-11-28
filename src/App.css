@@ -32,3 +32,14 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
 }
+.top_nav{
+  display: flex;
+  justify-content: space-between;
+}
+.btn_align_ctr{
+  align-self: center;
+  margin-top: 15px;
+}
+.mt20{
+  margin-top: 20px;
+}
